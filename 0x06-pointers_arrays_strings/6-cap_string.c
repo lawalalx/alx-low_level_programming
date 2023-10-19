@@ -1,9 +1,12 @@
+#include <stdio.h>
+
 /**
  * cap_string - Capitalizes all words of a string.
  * @str: The string to capitalize.
  *
  * Return: A pointer to the resulting string.
  */
+
 char *cap_string(char *str)
 {
 	int i = 0;
@@ -18,7 +21,7 @@ char *cap_string(char *str)
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
 			{
-				str[i] = str[i] - 32; // Convert to uppercase (ASCII difference)
+				str[i] = str[i] - 32;
 			}
 		}
 		i++;
