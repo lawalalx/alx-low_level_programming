@@ -11,10 +11,13 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
 	int match;
+	char *start_accept = accept;
 
 	while (*s)
 	{
 		match = 0;
+		accept = start_accept;
+
 		while (*accept)
 		{
 			if (*s == *accept)
@@ -28,7 +31,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			count++;
 			s++;
-			accept = accept - count;
 		}
 		else
 		{
