@@ -13,8 +13,6 @@ void print_all(const char * const format, ...)
 	va_list args;
 	unsigned int i = 0;
 	char *str;
-	int num;
-	float fnum;
 	char *separator = "";
 
 	va_start(args, format);
